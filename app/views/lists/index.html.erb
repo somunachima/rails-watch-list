@@ -1,0 +1,7 @@
+<p><strong>Lists</strong></p>
+<li class="list-group">
+  <% @lists.each do |list| %>
+  <ul><%= link_to list.name, list_path(list) %></ul><br>
+  <% end %>
+<p><%= link_to "Add a New List", new_list_path(@list) %></p>
+</li>
