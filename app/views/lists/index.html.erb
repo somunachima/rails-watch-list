@@ -1,7 +1,14 @@
-<p><strong>Lists</strong></p>
-<li class="list-group">
-  <% @lists.each do |list| %>
-  <ul><%= link_to list.name, list_path(list) %></ul><br>
-  <% end %>
-<p><%= link_to "Add a New List", new_list_path(@list) %></p>
-</li>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://ik.imagekit.io/uwaknajbdrm/https:/img.vt.co/2021/09/Theatre-Red-FI-Website-1024x534.jpg?ik-sdk-version=react-1.1.0&tr=w-412);">
+  <div class="container">
+    <h1>Save any kind of movies</h1>
+    <h2>Classic</h2>
+  </div>
+</div>
+
+  <p><strong>Lists</strong></p>
+  <li class="list-group">
+    <% @lists.each do |list| %>
+    <ul><%= link_to list.name, list_path(list) %></ul><br>
+    <% end %>
+  <p><%= link_to "Add a New List", new_list_path(@list) %></p>
+  </li>
